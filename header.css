@@ -1,0 +1,126 @@
+{
+	margin:0;
+	padding:0;
+	font-family: 'Algerian';
+}
+header1 
+{
+	background-color:#152b4f;
+	display:flex;
+	height:30px;  
+}
+header1 .location
+{
+	width:100%;
+	padding:0px 1100px; 
+	display:flex;
+
+
+	font-size:1.8em;
+	font-color:black;
+}
+.dropbtn {
+  background-color:#152b4f;
+  color: white;
+  padding: 2.9px;
+  font-size: 1.9ex;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  font-size:19px;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+section
+{
+	position:relative;
+	padding:10px; 
+	display:flex;
+	justify-content: space-between;
+
+}
+header0
+{
+	position:absolute;
+	align-items:center;
+	display:flex;
+	
+}
+	
+header
+{
+	position:absolute; top:0; left:0;
+	width:100%;
+	padding:20px 100px; display:flex;
+	justify-content: space-between;
+	align-items:center;
+	z-index:1000000;
+}
+.header .logo
+{
+	position:relative;
+	max-width:90px;
+}
+.header h1
+{
+	position:relative;
+	padding:10px;
+	font-size:2em;
+	align-items:center;
+}
+.header .ul1
+{
+	margin:100px 0px 0px;
+}
+header ul
+{
+	position:relative;
+	margin-right:100px; 
+	display:flex;
+}
+header ul li
+{
+	list-style: none;
+}
+header ul li a 
+{ 
+	display:inline-block;
+	color:white;
+	font-weight:400;
+	margin-left:40px;
+}
+ul {position:relative; display:flex; flex-direction:rows;}
+ul li {list-style:none;}
+ul li:before
+{content:attr(data-text); position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);color:black;
+font-size:6em;font-weight:700; pointer-events:none; opacity:0; letter-spacing:20px;
+transition:0.5s; white-space:nowrap;}
+}
+ul li:hover:before
+{opacity:0.5; letter-spacing:0px;}
+ul li a {position:relative; display:inline-block; padding:6px 15px; background:#152b4f; color:white; text-transform:uppercase;
+letter-spacing: 2px; overflow:hidden; transition:0.5s; z-index:1;}
+ul:hover li a {opacity:0;}
+ul li a:hover
+{ transform:scale(1.4); z-index:1000; background:#A30000; opacity:1;}
+ul li a:hover:before
+{left:calc(100%+100px);
+transition:0.5s;
+transition-delay:0.2s;}

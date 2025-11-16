@@ -1,0 +1,41 @@
+<html> 
+<head>
+<title> Experiments </title>
+<link rel="stylesheet" href="experiments.css">
+</head>
+<body>
+<section class="experiments">
+	<div class="experiment">
+		<div id="expert">
+			<h2 id="text">
+				<span data-depth-y="3">E</span>
+				<span data-depth-y="-2">X</span>
+				<span data-depth-y="5">P</span>
+				<span data-depth-y="-4">E</span>
+				<span data-depth-y="6">R</span>
+				<span data-depth-y="-5">I</span>
+				<span data-depth-y="3">M</span>
+				<span data-depth-y="-3">E</span>
+				<span data-depth-y="2">N</span>
+				<span data-depth-y="-2">T</span>
+				<span data-depth-y="4">S</span>
+			</h2>
+			<div class="icons" data-depth="0.5" style="padding:295px 820px;"> <img src="microscope.png"> </div>
+			<div class="icons" data-depth="0.75"> <img src="experiment.png" style="padding:180px 700px;"> </div>
+			<div class="icons" data-depth="0.15"> <img src="experiment (1).png" style="padding:250px 210px;"> </div>
+			<div class="icons" data-depth="-0.25"> <img src="science.png" style="padding:280px 400px;"> </div>
+			<div class="icons" data-depth="0.6"> <img src="atom.png" style="padding:195px 493px;"> </div>
+			<div class="icons" data-depth="0.375"> <img src="flask.png" style="padding:300px 600px;"> </div>
+		</div>
+	</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>var text= document.getElementById('text');
+var expert= document.getElementById('expert');
+
+var parallaxInstance = new Parallax(text);
+var parallaxInstance = new Parallax(expert);
+</script>
+
+</body>
+</html>

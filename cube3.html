@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title> photogallery</title>
+	<link rel="stylesheet" href="cube.css">
+	<link rel="stylesheet"       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+>
+	<script type="module" src="https://unpkg.com/ionicons@	5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@	5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+        		<div class="swiper-slide">
+				<div class="imgbox">
+          				<img src="f0.jpg">
+				</div>
+        		</div>
+			<div class="swiper-slide">
+				<div class="imgbox">
+          				<img src="f1.jpg">
+				</div>
+        		</div>
+			<div class="swiper-slide">
+				<div class="imgbox">
+          				<img src="f2.jpg">
+				</div>
+        		</div>
+			<div class="swiper-slide">
+				<div class="imgbox">
+          				<img src="f4.jpg">
+				</div>
+        		</div>
+			<div class="swiper-slide">
+				<div class="imgbox">
+          				<img src="f3.jpg">
+				</div>
+        		</div>
+
+            </div>
+	</div>
+	    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script type="text/javascript"> 
+		var swiper = new Swiper(".swiper-container", {
+        		effect: "cube",
+        		grabCursor: true,
+        		cubeEffect: {
+          		shadow: true,
+          		slideShadows: true,
+          		shadowOffset: 20,
+          		shadowScale: 0.94,
+        	}
+      });
+	</script>
+</body>
+</html>

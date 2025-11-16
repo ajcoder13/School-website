@@ -1,0 +1,203 @@
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:white;
+}
+.iframe1
+{
+	position:absolute;
+	top:180px;
+	left:40%;
+}
+.iframe2
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+}
+.iframe4
+{
+	position:absolute;
+	width:99%;
+	height:30%;
+	top:1700px;
+	bottom:0;
+	left:0;
+}
+
+
+.container
+{
+
+	display: flex;
+	flex-direction:row;
+	
+	flex-wrap: wrap;
+	padding:300px 30px;
+}
+.container .card
+{
+	position:relative;
+	width:300px;
+	height: 400px;
+	margin:30px;
+	left:5%;
+	display: flex;
+	justofy-content: center;
+	align-items: row;
+	box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+	overflow:hidden;
+	object-fit:contain;
+}
+.container:hover .card
+{
+	opacity:0.2;
+}
+.container .card:hover
+{
+	opacity:1;
+}
+.container .card::before
+{
+	content:'';
+	position:absolute;
+	top:2px;
+	left:2px;
+	bottom:2px;
+	width:50%;
+	background: rgba(255,255,255,0.1);
+	pointer-events:none;
+}
+.container .card .content
+{
+	padding: 0px;
+	text-align:center;
+	object-fit:contain;
+}
+
+
+
+}
+.container .card .content news
+{
+	position:relative;
+	object-fit:cover;
+	color:white;
+	z-index:2;
+	opacity:0.5s;
+	font-weight:300
+	letter-spacing:1px;
+	transition:0.5s;
+}
+
+.container .card span
+{
+	transition:0.5s;
+	opacity:0;
+}
+.container .card:hover span
+{
+	opacity:1;
+}
+.container .card span:nth-child(1)
+{
+	position:absolute;
+	top:0;
+	left:0;
+	height:3px;
+	width:100%;
+	background: linear-gradient(to right, transparent, red);
+	animation: animate1 2s linear infinite;
+}
+@keyframes animate1
+{
+	0%
+	{
+		transform: translateX(-100%);
+	}
+	100%
+	{
+		transform: translateX(100%);
+	}
+}
+.container .card span:nth-child(2)
+{
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	width:3px;
+	background: linear-gradient(to Bottom, transparent, red);
+	animation: animate2 2s linear infinite;
+	
+}
+@keyframes animate2
+{
+	0%
+	{
+		transform: translateY(-100%);
+	}
+	100%
+	{
+		transform: translateY(100%);
+	}
+}
+.container .card span:nth-child(3)
+{
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:3px;
+	width:100%;
+	background: linear-gradient(to left, transparent, red);
+	animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+	0%
+	{
+		transform: translateX(100%);
+	}
+	100%
+	{
+		transform: translateX(-100%);
+	}
+}
+.container .card span:nth-child(4)
+{
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:3px;
+	background: linear-gradient(to top, transparent, red);
+	animation: animate4 2s linear infinite;
+}
+@keyframes animate4
+{
+	0%
+	{
+		transform: translateY(100%);
+	}
+	100%
+	{
+		transform: translateY(-100%);
+	}
+}
+
+
+
+
+
+	
+

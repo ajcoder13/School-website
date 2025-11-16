@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Experiments</title>
+<link rel="stylesheet" type="text/CSS" href="dropdownexperiments.css">
+<script>
+        function toggleMenu() {
+            let menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+	function toggleMenu1() {
+            let menu = document.getElementById('menu1');
+            menu.classList.toggle('active');
+        }
+
+    </script>
+</head>
+<body>
+	<section>
+	
+       <nav>
+            <button onclick="toggleMenu()">Class XI</button>
+            <ul id="menu">
+                <li style="--i:1"><a href="phy11.html" target="iframe1">Physics</a></li>
+                <li style="--i:2"><a href="chem11.html" target="iframe1">Chemistry</a></li>
+                <li style="--i:3"><a href="bio11.html" target="iframe1">Biology</a></li>
+            </ul>
+       </nav>
+	<nav>
+            <button onclick="toggleMenu1()">Class XII</button>
+            <ul id="menu1">
+                <li style="--i:1"><a href="phy12.html" target="iframe1">Physics</a></li>
+                <li style="--i:2"><a href="chem12.html" target="iframe1">Chemistry</a></li>
+                <li style="--i:3"><a href="bio12.html" target="iframe1">Biology</a></li>
+            </ul>
+       </nav>
+    </section>
+    <iframe src="exp.html" frameborder=0 scrolling="no" name="iframe1" style="height:100%;width:83%;position:absolute;top:0px;left:205px;bottom:0px;"> </iframe>
+</body>
+</html>
